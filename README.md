@@ -1,6 +1,6 @@
 ### Screenshot Desktop :
 
-![](./screenshot.jpg)
+![](./screenshot-D.jpg)
 
 ### Screenshot Mobile :
 
