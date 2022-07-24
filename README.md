@@ -8,7 +8,7 @@
 
 ### Links :
 
-- Live Site URL: [here](https://your-live-site-url.com)
+- Live Site URL: [here](https://mohammedlahboub.github.io/3-column-preview-card-component/)
 
 
 ### Built with :
