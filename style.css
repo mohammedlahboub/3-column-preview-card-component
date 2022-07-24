@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+
+}
+:root{
+    /* Bright orange */
+--b-orange: hsl(31, 77%, 52%);
+    /* Dark cyan */
+--d-cyan: hsl(184, 100%, 22%);
+    /* Very dark cyan */
+--v-d-cyan: hsl(179, 100%, 13%);
+    /* Transparent white (paragraphs) */
+--t-white: hsla(0, 0%, 100%, 0.75);
+    /* Very light gray (background, headings, buttons) */
+--v-l-gray:hsl(0, 0%, 95%);
+
+--fs-body:15px;
+}
+/* ######## @MEDIA ######## */
+
+/* ### Desktop ### */
+@media (min-width:560px){
+    body{
+        height: 100vh;
+    }
+    .wrapper{
+        max-width: 900px;
+        margin: 1em 1em;
+
+    grid-template-columns: repeat(3,1fr);
+    }
+    .sedans{
+        border-radius: 0.7em  0 0 0.7em ;
+    }
+    .luxury{
+        border-radius: 0 0.7em  0.7em 0;
+    }
+    .buttons{
+        margin-top: 6em;
+    }
+    footer{
+        grid-column: span 3;
+        width: 25em;
+        padding: 3px;
+        margin: 2em auto 0;
+        background-color: white;
+        outline: 2px solid black;
+        border-radius: 1em;
+
+    }
+    .attribution { font-size: var(--fs-body); text-align: center; }
+}
+
+
+/* ### Mobile ### */
+@media (max-width:560px){
+    .wrapper{
+        max-width: 340px;
+        margin: 5em 0.7em 2em;
+
+    grid-template-columns: 1fr;
+    }
+    .sedans{
+        border-radius: 0.7em 0.7em 0 0 ;
+    }
+    .luxury{
+        border-radius: 0 0 0.7em 0.7em;
+    }
+    .buttons{
+        margin-top: 2em;
+    }
+    footer{
+        padding: 3px;
+        margin: 2em auto 0;
+        background-color: white;
+        outline: 2px solid black;
+        border-radius: 1em;
+
+    }
+    .attribution { font-size: 11px; text-align: center; }
+}
+/* ############### Body ############## */
+body{
+    background-color: var(--v-l-gray);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ############### Grid Wrapper ############## */
+.wrapper{
+    display: grid;
+    border-radius: 0.7em;
+}
+
+/* ########################################## */
+
+.padding{
+    
+    padding: 2.7em;
+}
+.paragraphs  {
+    font-family: 'Lexend Deca' ,sans-serif;
+    font-weight:400 ;
+    line-height: 1.5em;
+    color: var(--t-white);
+}
+.headings{
+    color: var(--v-l-gray);
+    margin: 0.7em 0;
+    font-size: 2.5em;
+    font-weight:700 ;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.buttons{
+    
+    color: var(--v-l-gray);
+    font-family:'Lexend Deca' ,sans-serif;
+    font-weight:400 ;
+    padding: 1em 2em;
+    font-size: 15px;
+    background-color: rgb(256, 256, 256);
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+/* ########################################## */
+
+/* ######## Sedans ######## */
+.sedans{
+background-color: var(--b-orange);
+}
+.sedans button{
+    color: var(--b-orange);
+}
+.sedans button:hover{
+    color: white;
+    background-color: var(--b-orange);
+    outline: 2px solid white;
+}
+.sedans button:focus{
+    color: white;
+    background-color: var(--b-orange);
+    outline: 2px solid white;
+}
+
+/* ######## SUVS ######## */
+.suvs{
+background-color: var(--d-cyan);
+}
+.suvs button{
+    color: var(--d-cyan);
+
+}
+.suvs button:hover{
+    color: white;
+    background-color: var(--d-cyan);
+    outline: 2px solid white;
+}
+.suvs button:focus{
+    color: white;
+    background-color: var(--d-cyan);
+    outline: 2px solid white;
+}
+/* ######## LUXURY ######## */
+.luxury{
+background-color: var(--v-d-cyan);
+}
+.luxury button{
+    color: var(--v-d-cyan);
+}
+.luxury button:hover{
+    color: white;
+    background-color: var(--v-d-cyan);
+    outline: 2px solid white;
+}
+.luxury button:focus{
+    color: white;
+    background-color: var(--v-d-cyan);
+    outline: 2px solid white;
+}
+/* ######## Footer ######## */
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
